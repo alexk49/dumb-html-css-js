@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h2>Javascript</h2>
+        <p>This page is to display some basic javascript</p>
+        <button id="color">Button one</button>
+        <button id="font">Button two</button>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+                            document.querySelector('#color').addEventListener('click', function() {
+
+                                            document.querySelector('body').style.backgroundColor = 'green';
+                                        });
+
+                            document.querySelector('#font').addEventListener('click', function() {
+                                            var p_tags = document.querySelector('p');
+                                            p_tags.style.fontSize = "25px";
+                                        });
+                        });
+        </script>
+    </body>
+</html>
