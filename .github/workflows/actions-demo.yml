@@ -21,7 +21,7 @@ run-name: Linting files
 on: [push]
 jobs:
   Run-ProseLint:
-    runs-on: ubuntu-latest:
+    runs-on: ubuntu-latest
       steps:
         - run: echo "html files with prettier"
           run: npx prettier --write *.html
