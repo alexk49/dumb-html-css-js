@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "html files with prettier"
-      - run: npx prettier --write *.html
+      - run: npx prettier --write '**.html'
       - run: echo "linting css files with prettier"
-      - run: npx prettier --write *.css
+      - run: npx prettier --write '**.css'
       - run: echo "linting javascript files with prettier"
-      - run: npx prettier --write *.js
+      - run: npx prettier --write '**.js'
