@@ -1,3 +1,4 @@
+// made exercises from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code
 document.addEventListener('DOMContentLoaded', function () {
     
     function startCountdown() {
