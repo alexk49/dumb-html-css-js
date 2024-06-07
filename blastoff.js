@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
             if (countdown === 0) {
                 para.textContent = "Blast off!";
             }
+            else if (countdown === 10) {
+                para.textContent = "Countdown 10";
+            }
             else {
                 para.textContent = countdown.toString();
             }
