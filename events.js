@@ -22,7 +22,9 @@ functionBtn.addEventListener("click", function (e) {
     e.target.style.background = "blue";
 });
 
-// creates a node list that acts like an array
+functionBtn.addEventListener("click", function(event) {
+    console.log(event.type);
+}); // creates a node list that acts like an array
 // for all buttons within the container id
 const containerButtons = document.querySelector("#container").querySelectorAll("button");
 
