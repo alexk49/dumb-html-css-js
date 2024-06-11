@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="events.js" defer></script>
+</head>
+<body>
+    <h1>Events</h1>
+    <p>Generally, Event listeners are the preferred method for setting events but there are multiple ways to do it.</p> 
+    <p>Uses embedded js in html file:</p>
+    <button onclick="alert('hello world')">Click Me</button>
+    <p>Separate js file, that uses the ID tag to get the selector and the onclick selector in the js file. This is not ideal as a DOM element can only have one "onclick property</p>
+    <button id="btn">No, click me!!!!</button>
+    <p>Uses event listener in separate file:</p>
+    <button id="eventBtn">nooo, click me!!</button>
+    <p>All the above can also use named functions as shown below. This one also includes logging information about the event triggered:</p>
+    <button id="functionBtn">click me if you want</button>
+    <p>and here is a list of buttons</p>
+    <div id="container">
+        <button id="1">Click Me</button>
+        <button id="2">Click Me</button>
+        <button id="3">Click Me</button>
+    </div>
+</body>
+</html>
