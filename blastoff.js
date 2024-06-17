@@ -23,4 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const startButton = document.getElementById("start-button");
 
     startButton.addEventListener("click", startCountdown);
+
+    startButton.addEventListener("keypress", (event) => {
+        var key = event.key;
+        console.log(key);
+    });
 });
